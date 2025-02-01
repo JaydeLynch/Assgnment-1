@@ -43,7 +43,7 @@ View the results.
 
 
 ## Running Tests
+Navigate:
+cd /workspaces/Assgnment-1/Assignment\ 1
 To run the unit tests, use:
-```sh
-python -m pytest src/test/```
-
+python -m pytest src/test/test_assignment_1.py

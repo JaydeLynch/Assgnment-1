@@ -5,7 +5,7 @@ This repository contains solutions to Programming Assignment 1 for the COT-4500 
 
 ## Repository Structure 
 
-cot-4500-Pro1/
+Assignment-1/
 |-- src/
 |   |-- main/
 |   |   |-- __init__.py
@@ -27,7 +27,7 @@ cd cot-4500-Pro1
 
 
 ### Installing Dependencies
-pip install -r reuirements.txt
+pip install -r requirements.txt
 
 ## Running the Program
 To execute the main program, navigate to the `src/main' directory and run:

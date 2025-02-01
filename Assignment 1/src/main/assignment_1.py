@@ -12,14 +12,13 @@ def compute_square_root(x0, tol=0.000001):
         iter += 1
         y = X
 
-        X = (X / 2) + (1 / X)
+        # Update X to compute the square root of x0
+        X = (X + x0 / X) / 2
         print(f"{iter} : {X}")
         diff = abs(X - y)
 
     print(f"\nConvergence after {iter} iterations")
     return X
-
-
 # Bisection method utilizing intermediate value theorem
 def bisection_method(f, a, b, tol, max_iterations):
     if f(a) * f(b) >= 0:
@@ -42,8 +41,6 @@ def bisection_method(f, a, b, tol, max_iterations):
     else:
         print("FAILURE: Maximum number of iterations reached.")
         return None
-
-
 # Fixed point iteration based on fixed point theorem
 def fixed_point_iteration(g, p0, TOL, N0):
     i = 1
